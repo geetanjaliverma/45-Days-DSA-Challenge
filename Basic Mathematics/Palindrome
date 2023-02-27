@@ -1,0 +1,25 @@
+#include<iostream>
+
+using namespace std;
+
+void isPalindrome(int n)
+{
+    int m=n;
+    int x,y=0;
+    while(m!=0)
+    {
+        x=m%10;
+        y=y*10+x;
+        m=m/10;
+    }
+   if(n==y)
+   cout<<"Palindrome";
+   else
+   cout<<"Not a Palindrome";
+}
+int main()
+{
+    int n=363;
+    isPalindrome(n);
+    
+}
